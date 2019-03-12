@@ -132,7 +132,7 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-form{
+.nav-item form{
     position: relative;
     top: 50%;
     left: 50%;
@@ -146,7 +146,7 @@ form{
     border: 2px solid white;
 }
 
-input{
+.nav-item input{
     position: absolute;
     top: 0;
     left: 0;
@@ -175,16 +175,16 @@ input{
     transition: all 1s;
 }
 
-form:hover{
+.nav-item form:hover{
     width: 200px;
     cursor: pointer;
 }
 
-form:hover input{
+.nav-item form:hover input{
     display: block;
 }
 
-form:hover .fa{
+.nav-item form:hover .fa{
     background: #07051a;
     color: white;
 }
