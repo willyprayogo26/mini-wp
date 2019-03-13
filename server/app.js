@@ -4,11 +4,11 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.MONGO_PORT || 3000
 
 const routes = require('./routes')
 
-mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@db-mini-willy-w30vg.gcp.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true });
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@db-mini-willy-w30vg.gcp.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true });
 
 app.use(cors());
 app.use(express.json())
